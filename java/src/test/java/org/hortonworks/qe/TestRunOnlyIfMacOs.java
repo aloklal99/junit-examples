@@ -1,6 +1,7 @@
 package org.hortonworks.qe;
 
 import static org.hamcrest.CoreMatchers.is;
+import static org.junit.Assert.fail;
 import static org.junit.Assume.assumeThat;
 
 import org.junit.BeforeClass;
@@ -18,11 +19,13 @@ public class TestRunOnlyIfMacOs {
 	@Test
 	public void test1() {
 		System.out.println("TestRunOnlyIfMacOs.test1()");
+		fail("Should not have run!");
 	}
 
 	@Test
 	public void test2() {
 		System.out.println("TestRunOnlyIfMacOs.test2()");
+		fail("Should not have run!");
 	}
 
 }
